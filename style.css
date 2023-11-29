@@ -1,0 +1,63 @@
+body {
+    background: #008405 url(img/bg.jpg) center center/auto repeat fixed;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-size: auto;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+a{
+    color:black;
+}
+
+tr>td:hover{
+    background-color: lightgreen;
+}
+
+table{
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    width: 100%;
+}
+
+tr{
+    background-color: darkgreen;
+}
+
+tr>td{
+    border:solid;
+    color: black;
+}
+
+#BarreRecherche{
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+    background-color: white;
+    color: black;
+    cursor: text;
+}
+
+input{
+    width: 99%;
+    margin-left: 10px;
+    height: 200%;
+}
+
+p{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+
+
