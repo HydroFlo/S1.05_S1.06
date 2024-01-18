@@ -1,5 +1,7 @@
 body {
     background: #008405 url(img/bg.jpg) center center/auto repeat fixed;
+    padding: 0%;
+    margin: 0%;
 }
 
 header{
@@ -13,11 +15,11 @@ header{
     font-family: sans-serif;
 }
 
-a{
+td>a{
     color:black;
 }
 
-tr>td:hover{
+tr#Menu>td:hover{
     background-color: lightgreen;
 }
 
@@ -27,8 +29,13 @@ table{
     width: 100%;
 }
 
-tr{
-    background-color: darkgreen;
+tr#Menu>td{
+    background-color: #006400;
+    transition: background-color 0.5s ease 0s;
+}
+
+main>img{
+    margin-top: 25px;
 }
 
 tr>td{
@@ -37,6 +44,8 @@ tr>td{
 }
 
 #BarreRecherche{
+    display: grid;
+    grid-template-columns: 1fr 55fr;
     text-align: left;
     vertical-align: middle;
     width: 100%;
@@ -45,19 +54,196 @@ tr>td{
     cursor: text;
 }
 
-input{
-    width: 99%;
-    margin-left: 10px;
-    height: 200%;
+.DonneePerso>p{
+    text-align: left;
 }
 
-p{
+#BarreRecherche form{
+    width: 100%;
+}
+
+#BarreRecherche form input{
+    margin-left: 4%;
+    width: 17%;
+}
+
+#BarreRecherche form button{
+    width: 10%;
+    float: right;
+}
+
+input.ChangerPP{
+    width: auto;
+    margin: 0% 0% 0% 0%;
+    border:solid;
+    border-color: black;
+    background: #008405 url(img/bg_fonce.png) center center/auto repeat fixed;
+    color:white;
+    font-weight: bold;
+}
+
+input:hover{
+    background-color: lightgray;
+}
+
+p#home_box{
     text-align: center;
-    background-color: black;
-    color: white;
+    background: #008405 url(img/bg_fonce.png) center center/auto repeat fixed;
+    color: black;
     font-family: sans-serif;
     height: 100%;
+    border: 10px dashed #000000;
+    box-shadow: 8px 8px 5px #00000080;
+    border-radius: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+p#home_box>a{
+    color: white;
+}
 
+p#home_box>b{
+    color: white;
+}
 
+p#home_box_short{
+    text-align: center;
+    background: #008405 url(img/bg_fonce.png) center center/auto repeat fixed;
+    color: black;
+    font-family: sans-serif;
+    height: 100%;
+    border: 10px dashed #000000;
+    box-shadow: 8px 8px 5px #00000080;
+    border-radius: 100px;
+    font-size: 25px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 15px 15px 15px;
+}
+
+p#home_box_short>a{
+    color: white;
+}
+
+p#home_box_short>b{
+    color: white;
+}
+
+div#img_box{
+    text-align: center;
+    column-count: 3;
+}
+
+#DonneePerso img{
+    border: solid;
+    margin-left: 5%;
+}
+
+#DonneePerso p{
+    background: RGBa(0,0,0,0.6) url(img/bg_fonce.png) center center/auto repeat fixed;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left:2%;
+    border: solid #000;
+    text-align: center;
+    color:white;
+    width: 23%;
+}
+
+#DonneePerso>input{
+    margin-left:2%;
+    width: 23%;
+}
+
+#DonneePerso li{
+    color: white;
+    padding-left: 10px;
+}
+#DonneePerso ul{
+    float: right;
+    background: RGBa(124, 124, 200, 0.7) url(img/bg_fonce.png) center center/auto repeat fixed;
+    margin-left: 0%;
+    margin-right: 5%;
+    width: 40%;
+    border: solid;
+    list-style: none;
+}
+
+#DonneePerso ul li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#AjoutTrajet form{
+    border: solid black;
+    color:white;
+    background: RGBa(124, 124, 200, 0.7) url(img/bg_fonce.png) center center/auto repeat fixed;
+    padding-left: 1%;
+    width: 20%;
+    float: right;
+    text-align: center;
+
+}
+
+#AjoutTrajet>p{
+    border: solid black;
+    font-weight: bold;
+    color:white;
+    background: RGBa(124, 124, 200, 0.7) url(img/bg_fonce.png) center center/auto repeat fixed;
+    margin-left: 82%;
+    text-align: center;
+    margin-right: 3%;
+}
+#AjoutTrajet #heure{
+    width: 50px;
+}
+
+#ListeTrajet{
+    border: solid;
+    width: 75%;
+    background: RGBa(150, 150, 200, 0) url(img/bg_fonce.png) center center/auto repeat fixed;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#ListeTrajet ul, #ListeRecherche ul{
+    list-style: none;
+
+}
+
+#ListeTrajet p, #ListeRecherche p{
+    color:white;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+#ListeTrajet li, #ListeRecherche li{
+    border: solid;
+    border-radius: 100px;
+    text-align: center;
+    width: 90%;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 3%;
+
+}
+
+#ListeRecherche{
+    border: solid;
+    width: 75%;
+    background: RGBa(150, 150, 200, 0) url(img/bg_fonce.png) center center/auto repeat fixed;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 5%;
+    margin-left: 13%;
+}

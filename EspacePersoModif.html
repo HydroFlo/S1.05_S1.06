@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UFT-8">
+        <title>covoiturage</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="https://www.lego.com"><img src="img/logo.png" alt="Logo" width="175" height="175"/></a>
+            <h1>SERVICE DE COVOITURAGE POUR LES EMPLOYÉS</h1>
+            <img src="img/voiture.jpg" alt="Voiture" width="175" height="175"/>
+        </header>
+        <main>
+            <table>
+              <tr id="Menu">
+                <td><a href="Home.html"><img src="img/home.png" alt="Home" width="50" height="50"/></a></td>
+                <td><a href="Recherche.html"><h3>Rechercher un trajet en covoiturage</h3></a></td>
+                <td><a href="Trajet.html"><h3>Mes trajets</h3></a></td>
+                <td><a href="EspacePerso.html"><h3>Espace personnel</h3></a></td>
+              </tr>
+            </table>
+            <div id="DonneePerso">
+                <img src="img/pp.png" alt="photo_Profil" width="15%" height="15%">
+                <p>Modifier la photo de profil</p>
+                <input class="ChangerPP" placeholder="changer image de profil" type="file" color="darkgreen"/>
+                <form action="EspacePersoRempli.html" method="post">
+                    <ul>
+                        <li>
+                            <label for="nom">nom : </label>
+                            <input id="nom">
+                        </li>           
+                        <li>
+                            <label for="prenom">prenom : </label>
+                            <input id="prenom">
+                        </li>
+                        <li>
+                            <label for="dateNaiss">date de naissance : </label>
+                            <input type="date" id="dateN" lang="fr">
+                        </li>
+                        <li>
+                            <label for="creacCompte">création du compte : </label>
+                        </li>
+                        <li>
+                            <label for="nbTrajet">nombre de trajet : </label>
+                        </li>
+                        <li>
+                            <label for="vehicule">véhicule : </label>
+                            <input id="vehicule">
+                        </li>
+                        <li>
+                            <label for="adresse">adresse : </label>
+                            <input id="adresse">
+                        </li>
+                        <li>
+                            <label for="mail">adresse mail : </label>
+                            <input type="email" id="adresseMail">
+                        </li>   
+                        <li>
+                            <button type="submit">Valider</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>      
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
